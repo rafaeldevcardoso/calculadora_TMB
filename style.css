@@ -1,0 +1,59 @@
+body{
+    background:rgb(132, 244, 171);
+    font: normal 16pt arial ;
+    margin: 30px;        
+}
+section#tab_tbm{
+    background-color: rgb(238, 238, 238);
+    border-radius: 3%;   
+    box-shadow: 10px 10px 20px rgb(97, 97, 97);                    
+    position: absolute;
+    width: 50%;
+    margin: 0% 20%  0% 20%;
+    padding: 30px 50px 30px 50px;
+}
+form#formtmb{
+    margin-bottom: 22px;
+}
+
+label{
+    margin-bottom: 20px;
+}
+input{
+    font:normal 18pt times;     
+}
+input#peso, input#altura, input#idade{
+    width: 80px;
+    height: 30px;
+    border: hidden;
+    border-radius: 7%;
+}
+
+
+button {
+    font: normal 18px arial;
+    background-color: #ff520e;
+    color: white;
+    margin: 10px 0px 25px 0px;
+    padding: 10px 20px 10px 20px;
+    border-style: hidden;
+    border-radius: 7%;
+    box-shadow: 2px 2px 7px rgb(97, 97, 97);
+}
+div#resultado{
+    font: normal 20px arial;
+}
+
+h2{
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+p{
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+    margin-top: 30px;
+    text-align: justify;
+}

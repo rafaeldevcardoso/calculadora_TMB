@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste V2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="calcTMB.js"></script>
+</head>
+<body>
+    <main>
+    <section>
+        <!-- CALCULADORA FIT 
+            Instruções BOTÃO (talvez por uma janela pra aparecer com as informações)
+        -->
+    </section>
+    <section id="tab_tbm">
+        <h2>1º PASSO - Calcular TBM</h2>
+        
+        <form id="formtmb">
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Masculino</label><br>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Feminino</label><br><br>
+            
+
+            <label for="peso"> Coloque o seu <strong>peso</strong>: </label><br>
+            <input type="number" id="peso" name="peso" min="30" max="200"> KG<br>
+
+            <label for="altura"> Coloque a sua <strong>altura</strong>: </label><br>
+            <input type="number" id="altura" name="altura" min="140" max="230"> Cm<br>
+
+            <label for="idade"> Coloque a sua <strong>idade</strong>: </label><br>
+            <input type="number" id="idade" name="idade" min="10" max="100"> Anos<br>                
+        </form>
+        <button onclick=tmbResult()> Calcular </button>
+
+        <div id="resultado">Resultado...</div>
+        <p>* Taxa de metabolismo basal (ou TBM) capacidade que o nosso corpo tem de consumir energia estando parado, em repouso total</p>
+    </section>
+    <section>
+        <!-- Aqui ficara o próximo formulário que irá calcular ... -->
+    </section>
+    </main>       
+</body>
+</html>
+
+<!--  
+        Exemplo de soma simples
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res') //tem que criar um ID para alguma div
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+
+-->
+
+<!-- 
+    Formula taxa metabolismo basal masculino e feminino
+    Para os homens, podemos usar a fórmula: TMB = 66 + (13,8 x peso em kg.) + (5 x altura em cm) - (6,8 x idade em anos). 
+    Para as mulheres, usa-se a fórmula: TMB = 655 + (9,6 x peso em kg.) + (1,8 x altura em cm) - (4,7 x idade em anos). 
+-->
+
+<!--  Lista do que precisa ser feito
+    1 - Colocar um botão para calcular
+    2 - Resultado do calculo sem precisar ter que atualizar a página
+    3 - Criar uma pasta para receber os arquivos, separar os CSS e JS
+    ----- Feito -----
+    4 - Utilizar o Bootstrap devido a responsividade, se for necessário
+
+
+
+-->
